@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Evolución del Arte del Cómic</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="text-gray-800">
+
+  <header class="text-center py-8 md:py-12 bg-white/50">
+    <div class="container mx-auto px-4">
+      <h1 class="text-5xl md:text-7xl font-bold tracking-wider text-gray-900">La Evolución del Arte del Cómic</h1>
+      <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Una exploración interactiva de cómo la tecnología, la cultura y la visión artística transformaron el noveno arte.</p>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <section id="timeline-nav" class="mb-12">
+      <h2 class="text-4xl text-center mb-8 font-bebas tracking-wide">Navega por las Eras</h2>
+      <div class="w-full max-w-5xl mx-auto">
+        <div class="relative">
+          <div class="absolute left-0 top-1/2 w-full h-1 bg-gray-300 -translate-y-1/2"></div>
+          <div class="relative flex justify-between"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content-display" class="bg-white/70 p-6 md:p-10 rounded-2xl shadow-lg">
+      <h2 id="era-title" class="text-5xl md:text-6xl font-bebas tracking-wider text-center mb-2"></h2>
+      <p id="era-dates" class="text-center text-gray-500 text-lg mb-8"></p>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-1 space-y-8">
+          <div class="content-card p-6 rounded-xl">
+            <h3 class="text-3xl font-bebas tracking-wide mb-3">Resumen de la Era</h3>
+            <p id="era-summary" class="text-gray-700 leading-relaxed"></p>
+          </div>
+          <div class="content-card p-6 rounded-xl">
+            <h3 class="text-3xl font-bebas tracking-wide mb-3 text-center">Análisis Comparativo</h3>
+            <div class="chart-container">
+              <canvas id="eraComparisonChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-1 space-y-8">
+          <div class="content-card p-6 rounded-xl">
+            <h3 class="text-3xl font-bebas tracking-wide mb-4">Características Visuales</h3>
+            <ul id="era-visuals" class="space-y-3 list-none"></ul>
+          </div>
+          <div class="content-card p-6 rounded-xl">
+            <h3 class="text-3xl font-bebas tracking-wide mb-4">Artistas Influyentes</h3>
+            <div id="era-artists" class="space-y-4"></div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-1 space-y-8">
+          <div class="content-card p-6 rounded-xl">
+            <h3 class="text-3xl font-bebas tracking-wide mb-4">Fuerzas Impulsoras</h3>
+            <div id="era-forces" class="space-y-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--
+    <section id="references" class="bg-white/70 p-6 md:p-10 rounded-2xl shadow-lg mt-12">
+      <h2 class="text-4xl text-center mb-6 font-bebas tracking-wide text-gray-900">Referencias</h2>
+      <p class="text-gray-700 leading-relaxed max-w-3xl mx-auto text-center">
+        Esta sección está dedicada a las fuentes de información utilizadas...
+      </p>
+    </section>
+  </main>
+-->
+<footer class="text-center py-6 mt-12 text-gray-500">
+  <p>&copy; 2025 Explorador del Arte del Cómic.</p>
+  <p class="mt-2">
+    <a href="referencias.html" class="text-blue-600 hover:text-blue-800 hover:underline">Ver Referencias</a>
+  </p>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
